@@ -22,13 +22,13 @@ $env = new Env("../private/env.json");
 //   SETUP TWIG   //
 //################//
 $env->twig = new \Twig\Environment((new \Twig\Loader\FilesystemLoader("../private/views")), [
-    "cache" => false
+    "cache" => ($env->cache_templates === true) ? "../private/cache" : false
 ]);
 
 //###################//
 //   SETUP COOKIES   //
 //###################//
-$env->cookie = new Cookie((new \CommandString\CookieEncryption\Encryption(Env::get()->cookies->passphrase, Env::get()->cookies->method)));
+// $env->cookie = new Cookie((new \CommandString\CookieEncryption\Encryption(Env::get()->cookies->passphrase, Env::get()->cookies->method)));
 
 //######################//
 //   SETUP PDO DRIVER   //
