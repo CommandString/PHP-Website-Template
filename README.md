@@ -2,8 +2,9 @@
 
 # Setting up the template
 1. [Create a repository with this template](https://github.com/CommandString/PHP-Website-Template/generate) then `git pull` the template into a directory of your choice.
-2. Copy `/private/env.example.js` to `/private/env.json`
-3. Add values to `env.json`
+3. cd into `/private` and `composer install` to require packages
+3. Copy `/private/env.example.js` to `/private/env.json`
+4. Add values to `env.json`
 	```php
 	{
 	    // ...
