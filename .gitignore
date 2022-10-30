@@ -1,2 +1,4 @@
 private/env.json
 vendor
+private/cache/*
+!/private/cache/CACHE
