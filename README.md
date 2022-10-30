@@ -15,6 +15,7 @@
 	```
 	* If you setup the mysql environment variables, open `/public/index.php` and uncomment lines `36-42` to create a connection to your database.
 	* If you setup the cookie environment variables, open `/public/index.php` and uncomment line `31` to create a Cookie driver.
+	* When in production make sure to set `cache_templates` to `true`
 
 # Test Configuration
 1. Open your terminal of choice and cd into `/public` then `php -S 127.0.0.1:8000 index.php`
@@ -31,7 +32,8 @@
 | /public/assets/js  	| Javascript
 | /private 						| Files that cannot be accessed directly
 | /private/routes 		| Route declarations and handlers
-| /private/views  		| Templates and pages
+| /private/views  		| Template storage
+| /private/cache			| Cached template storage
 
 # Learning Resources
 [CommandString/Router](https://github.com/CommandString/router)
