@@ -1,0 +1,11 @@
+{% extends "templates/errorPage.html" %}
+
+{% block head %}
+{{ parent() }}
+<title>404 - Not Found</title>
+{% endblock %}
+
+{% block header %}404 - Not Found{% endblock %}
+{% block subheader %}
+<b>{{ uri }}</b> does not exist on this website!
+{% endblock %}

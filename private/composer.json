@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Router\\Routes\\": "./routes"
+        }
+    },
+    "require": {
+        "commandstring/router": "^1.0",
+        "commandstring/pdo": "^1.0",
+        "commandstring/cookie-encryption": "^2.0",
+        "twig/twig": "^3.4"
+    }
+}

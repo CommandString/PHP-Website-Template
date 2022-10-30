@@ -1,0 +1,17 @@
+{% extends "templates/basic.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/home.css">
+<script src="/assets/js/errorPage.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="ui fluid inverted red segment">
+    <h1 class="ui centered massive header">
+        {% block header %}{% endblock %}
+        <div class="sub header">
+            {% block subheader %}{% endblock %}
+        </div>
+    </h1>
+</div>
+{% endblock %}
