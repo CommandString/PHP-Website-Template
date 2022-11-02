@@ -5,6 +5,7 @@
 3. cd into `/private` and `composer install` to require packages
 3. Copy `/private/env.example.js` to `/private/env.json`
 4. Add values to `env.json`
+
 	```php
 	{
 	    // ...
