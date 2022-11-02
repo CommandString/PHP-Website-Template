@@ -12,6 +12,7 @@ $router->get("/", function () {
     return new HtmlResponse(Env::get()->twig->render("home.html"));
 });
 
+// DEFINE ALL ROUTES ABOVE HERE OR THEY WILL NOT WORK //
 $router->get("/.*(".Files::generateRegex().")", "Files@handle");
 
 $router->set404("/.*", "ErrorHandler@handle404");
