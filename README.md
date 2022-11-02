@@ -35,6 +35,7 @@
 | /private/routes 		| Route declarations and handlers
 | /private/views  		| Template storage
 | /private/cache			| Cached template storage
+| /private/extensions | Twig extensions
 
 # Learning Resources
 [CommandString/Router](https://github.com/CommandString/router)
