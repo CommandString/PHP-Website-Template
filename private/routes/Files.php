@@ -12,7 +12,8 @@ class Files {
         "jpg" => "image/jpeg",
         "jpeg" => "image/jpeg",
         "gif" => "image/gif",
-        "ico" => "image/x-icon"
+        "ico" => "image/x-icon",
+        "ttf" => "font/ttf"
     ];
 
     public static function handle(ResponseInterface $res): ResponseInterface
@@ -38,9 +39,9 @@ class Files {
         $regex = "";
 
         foreach (array_keys(self::$content_types) as $type) {
-            $regex.= sprintf("\b\.%s\b|", $type);
+            $regex.= sprintf(".%s|", $type);
         }
         
-        return $regex;
+        return substr($regex, 0, -1);
     }
 }
