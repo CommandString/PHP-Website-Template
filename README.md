@@ -1,6 +1,6 @@
 # PHP Website Template
 
-# I'm deprecating this template, please checkout [cmdMicro](https://github.com/commandstring/cmdstrmicro)
+# I'm deprecating this template, please checkout [cmdMicro](https://github.com/commandstring/cmdmicro)
 
 # Setting up the template
 1. [Create a repository with this template](https://github.com/CommandString/PHP-Website-Template/generate) then `git pull` the template into a directory of your choice.
